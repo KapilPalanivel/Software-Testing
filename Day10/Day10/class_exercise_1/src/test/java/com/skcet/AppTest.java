@@ -16,9 +16,6 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-/**
- * Unit test for simple App.
- */
 public class AppTest {
     Logger log;
     Actions actions;
@@ -109,7 +106,7 @@ public class AppTest {
     @Test(dependsOnMethods = "setAmount")
     public void setStartDate() {
         
-        String start_date = "2021-08-02";
+        String startDate = "2021-08-02";
         By elementXpath = By.xpath("//*[@id=\"stdt\"]");
         wait.until(ExpectedConditions.presenceOfElementLocated(elementXpath));
 
